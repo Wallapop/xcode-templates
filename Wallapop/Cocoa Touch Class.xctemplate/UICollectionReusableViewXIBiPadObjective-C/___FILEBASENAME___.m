@@ -1,0 +1,16 @@
+//
+//  Created by ___FULLUSERNAME___ on ___DATE___.
+//___COPYRIGHT___
+//
+
+#import "___FILEBASENAME___.h"
+
+@implementation ___FILEBASENAMEASIDENTIFIER___
+
+- (void)awakeFromNib
+{
+    [super awakeFromNib];
+    // Initialization code
+}
+
+@end
