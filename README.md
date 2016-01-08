@@ -18,6 +18,20 @@ Copy the folder `Wallapop` in the folder `File Templates`, you can find it here:
 
 Just create new files from the new `Wallapop` section on the file creation screen.
 
+# What's different?
+
+A few things, like spaces, but the interesting part is:
+
+- All Files: 
+	- Header comments without file/project name
+
+- Objective-C files:
+	- All header files (`.h`) come with `NS_ASSUME_NONNULL_BEGIN` and `NS_ASSUME_NONNULL_END` by default
+	- Added `[super awakeFromNib];` on classes missing it.
+	
+- Swift files:
+	- All classe are `final` by default
+
 # Compatibility
 
 - Tested on Xcode 7
