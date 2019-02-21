@@ -5,18 +5,18 @@
 	<key>DefaultCompletionName</key>
 	<string>MyScene</string>
 	<key>Description</key>
-	<string>This generates a new usecase to perform your specific logic.</string>
+	<string>This generates a new presenter to perform your scene business logic.</string>
 	<key>Kind</key>
 	<string>Xcode.IDEKit.TextSubstitutionFileTemplateKind</string>
 	<key>Options</key>
 	<array>
 		<dict>
 			<key>Description</key>
-			<string>The name of the usecase to create</string>
+			<string>The name of the presenter to create</string>
 			<key>Identifier</key>
-			<string>usecaseSceneName</string>
+			<string>presenterName</string>
 			<key>Name</key>
-			<string>New UseCase Name:</string>
+			<string>New Presenter Name:</string>
 			<key>NotPersisted</key>
 			<true/>
 			<key>Required</key>
@@ -26,7 +26,7 @@
 		</dict>
 		<dict>
 			<key>Default</key>
-			<string>___VARIABLE_usecaseSceneName:identifier___</string>
+			<string>___VARIABLE_presenterSceneName:identifier___</string>
 			<key>Identifier</key>
 			<string>productName</string>
 			<key>Type</key>
@@ -34,13 +34,13 @@
 		</dict>
 		<dict>
 			<key>Default</key>
-			<string>___VARIABLE_usecaseSceneName:identifier___</string>
+			<string>___VARIABLE_presenterName:identifier___Presenter</string>
 			<key>Description</key>
-			<string>The usecase name</string>
+			<string>The presenter name</string>
 			<key>Identifier</key>
-			<string>usecaseName</string>
+			<string>presenterSceneName</string>
 			<key>Name</key>
-			<string>UseCase Name:</string>
+			<string>Presenter Name:</string>
 			<key>Required</key>
 			<true/>
 			<key>Type</key>
@@ -54,6 +54,6 @@
 	<key>SortOrder</key>
 	<string>5</string>
 	<key>Summary</key>
-	<string>This generates a new usecase to perform your specific logic.</string>
+	<string>This generates a new presenter to perform your scene business logic.</string>
 </dict>
 </plist>
