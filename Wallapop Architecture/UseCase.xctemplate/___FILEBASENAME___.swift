@@ -1,7 +1,7 @@
 import Foundation
 import RxSwift
 
-final class ___VARIABLE_usecaseSceneName___ {
+struct ___VARIABLE_usecaseSceneName___ {
     typealias usecase = <#type expression#>
     
     init(<#parameters#>) {
