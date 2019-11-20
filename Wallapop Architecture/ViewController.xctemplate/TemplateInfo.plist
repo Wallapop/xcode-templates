@@ -51,9 +51,9 @@
 	<array>
 		<string>com.apple.platform.iphoneos</string>
 	</array>
-	<key>SortOrder</key>
-	<string>2</string>
 	<key>Summary</key>
 	<string>This generates a new view controller to respond your scene view actions.</string>
+	<key>SortOrder</key>
+	<string>2</string>
 </dict>
 </plist>

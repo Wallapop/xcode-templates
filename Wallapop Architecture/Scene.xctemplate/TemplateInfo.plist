@@ -3,13 +3,23 @@
 <plist version="1.0">
 <dict>
 	<key>DefaultCompletionName</key>
-	<string>MyScene</string>
+	<string>Scene</string>
 	<key>Description</key>
 	<string>This generates a new scene using Wallapop&apos;s Architecture.</string>
 	<key>Kind</key>
 	<string>Xcode.IDEKit.TextSubstitutionFileTemplateKind</string>
 	<key>Options</key>
 	<array>
+		<dict>
+			<key>Identifier</key>
+			<string>productName</string>
+			<key>Type</key>
+			<string>static</string>
+			<key>Default</key>
+			<string>___VARIABLE_sceneName:identifier___</string>
+			<key>NotPersisted</key>
+			<true/>
+		</dict>
 		<dict>
 			<key>Description</key>
 			<string>The name of the scene to create</string>
@@ -23,14 +33,6 @@
 			<true/>
 			<key>Type</key>
 			<string>text</string>
-		</dict>
-		<dict>
-			<key>Default</key>
-			<string>___VARIABLE_sceneName:identifier___</string>
-			<key>Identifier</key>
-			<string>productName</string>
-			<key>Type</key>
-			<string>static</string>
 		</dict>
 		<dict>
 			<key>Default</key>
@@ -62,13 +64,13 @@
 		</dict>
 		<dict>
 			<key>Default</key>
-			<string>___VARIABLE_sceneName:identifier___Wireframe</string>
+			<string>___VARIABLE_sceneName:identifier___Coordinator</string>
 			<key>Description</key>
-			<string>The wireframe name</string>
+			<string>The scene&apos;s coordinator name</string>
 			<key>Identifier</key>
-			<string>wireframeName</string>
+			<string>coordinatorName</string>
 			<key>Name</key>
-			<string>Wireframe Name:</string>
+			<string>Coordinator Name:</string>
 			<key>Required</key>
 			<true/>
 			<key>Type</key>
@@ -90,25 +92,17 @@
 		</dict>
 		<dict>
 			<key>Default</key>
-			<string>UIViewController</string>
+			<string>___VARIABLE_sceneName:identifier___SceneDelegate</string>
 			<key>Description</key>
-			<string>What view controller class to subclass for the new scene</string>
-			<key>FallbackHeader</key>
-			<string>#import &lt;UIKit/UIKit.h&gt;</string>
+			<string>The scene delegate name</string>
 			<key>Identifier</key>
-			<string>viewControllerSubclass</string>
+			<string>sceneDelegateName</string>
 			<key>Name</key>
-			<string>Subclass of:</string>
-			<key>NotPersisted</key>
-			<true/>
+			<string>Scene delegate Name:</string>
 			<key>Required</key>
-			<string>YES</string>
+			<true/>
 			<key>Type</key>
-			<string>class</string>
-			<key>Values</key>
-			<array>
-				<string>UIViewController</string>
-			</array>
+			<string>static</string>
 		</dict>
 	</array>
 	<key>Platforms</key>
