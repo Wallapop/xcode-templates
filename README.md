@@ -8,6 +8,12 @@ Xcode source Templates modified
 
 # Installation
 
+- Automatic:
+```
+cd xcode-templates
+make install_template
+```
+- Manual
 Copy the folder `Wallapop` in the folder `File Templates`, you can find it here:
 
 ```
