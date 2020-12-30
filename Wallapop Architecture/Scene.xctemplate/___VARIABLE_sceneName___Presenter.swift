@@ -3,7 +3,7 @@ import RxSwift
 import CommonUI
 
 protocol ___VARIABLE_sceneName___Presenting: Presenting {
-    weak var ui: ___VARIABLE_sceneName___UI? { get set }
+    var ui: ___VARIABLE_sceneName___UI? { get set }
 }
 
 protocol ___VARIABLE_sceneName___UI: UI, FeedbackShowable {
@@ -15,7 +15,7 @@ final class ___VARIABLE_sceneName___Presenter: Presenter {
     weak var sceneDelegate: ___VARIABLE_sceneName___SceneDelegate?
     
     init(sceneDelegate: ___VARIABLE_sceneName___SceneDelegate) {
-        self.delegate = delegate
+        self.sceneDelegate = sceneDelegate
     }
 }
 

@@ -9,4 +9,3 @@ extension ___VARIABLE_sceneName___ViewModel {
         self.subtitleText = localize("TEMPLATE SUBTITLE")
     }
 }
-

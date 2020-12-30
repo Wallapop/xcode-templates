@@ -8,11 +8,14 @@ final class ___VARIABLE_sceneName___Coordinator: Coordinator {
     weak var delegate: ___VARIABLE_sceneName___CoordinatorDelegate?
     
     init(fromViewController: UIViewController, delegate: ___VARIABLE_sceneName___CoordinatorDelegate) {
+        self.delegate = delegate
+        let presentation = ControllerTransitionStyle.Presentation(fromController: fromViewController)
+        super.init(transition: .present(presentation))
     }
     
-    func start() {
+    override func start() {
         let presenter = ___VARIABLE_sceneName___Presenter(sceneDelegate: self)
-        let ui = ___VARIABLE_sceneName___Controller(presenter: presenter)
+        let ui = ___VARIABLE_sceneName___ViewController(presenter: presenter)
         presenter.ui = ui
         transition?.show(controller: ui, animated: true)
     }
