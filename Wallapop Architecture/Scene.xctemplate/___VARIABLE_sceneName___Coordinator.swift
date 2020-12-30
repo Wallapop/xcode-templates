@@ -1,23 +1,20 @@
 import Foundation
 import CommonUI
 
-protocol ___VARIABLE_sceneName___Coordinating: Coordinator {
-}
-
 protocol ___VARIABLE_sceneName___CoordinatorDelegate: AnyObject {
 }
 
-final class ___VARIABLE_sceneName___Coordinator: ___VARIABLE_sceneName___Coordinating {
-    var children = [Coordinator]()
-    var transition: ControllerTransitionStyle?
-    weak var parent: Coordinator?
-    
+final class ___VARIABLE_sceneName___Coordinator: Coordinator {
     weak var delegate: ___VARIABLE_sceneName___CoordinatorDelegate?
     
-    init() {
+    init(fromViewController: UIViewController, delegate: ___VARIABLE_sceneName___CoordinatorDelegate) {
     }
     
     func start() {
+        let presenter = ___VARIABLE_sceneName___Presenter(sceneDelegate: self)
+        let ui = ___VARIABLE_sceneName___Controller(presenter: presenter)
+        presenter.ui = ui
+        transition?.show(controller: ui, animated: true)
     }
 }
 
