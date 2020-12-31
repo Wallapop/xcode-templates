@@ -5,7 +5,7 @@ protocol ___VARIABLE_sceneName___CoordinatorDelegate: AnyObject {
 }
 
 final class ___VARIABLE_sceneName___Coordinator: Coordinator {
-    weak var delegate: ___VARIABLE_sceneName___CoordinatorDelegate?
+    private weak var delegate: ___VARIABLE_sceneName___CoordinatorDelegate?
     
     init(fromViewController: UIViewController, delegate: ___VARIABLE_sceneName___CoordinatorDelegate) {
         self.delegate = delegate
