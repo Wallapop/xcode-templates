@@ -2,7 +2,7 @@ import UIKit
 import CommonUI
 
 final class ___VARIABLE_sceneName___ViewController: ViewController {
-    private var mainView = ___VARIABLE_sceneName___View()
+    private let mainView = ___VARIABLE_sceneName___View()
     private let presenter: ___VARIABLE_sceneName___Presenting
     
     init(presenter: ___VARIABLE_sceneName___Presenting) {
