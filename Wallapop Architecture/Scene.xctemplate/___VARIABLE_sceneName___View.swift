@@ -21,7 +21,7 @@ final class ___VARIABLE_sceneName___View: View, StatefulView {
     }
     
     private func addSubviews() {
-        [].forEach { addSubview($0) }
+        [].forEach(addSubview)
     }
 
     override func setupConstraints() {
