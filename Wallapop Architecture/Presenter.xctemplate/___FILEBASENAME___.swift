@@ -12,7 +12,7 @@ protocol ___VARIABLE_sceneName___UI: UI, FeedbackShowable {
 
 final class ___VARIABLE_sceneName___Presenter: Presenter {
     weak var ui: ___VARIABLE_sceneName___UI?
-    weak var sceneDelegate: ___VARIABLE_sceneName___SceneDelegate?
+    private weak var sceneDelegate: ___VARIABLE_sceneName___SceneDelegate?
     
     init(sceneDelegate: ___VARIABLE_sceneName___SceneDelegate) {
         self.sceneDelegate = sceneDelegate
