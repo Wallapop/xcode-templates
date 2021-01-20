@@ -21,7 +21,5 @@ final class ___VARIABLE_sceneName___Presenter: Presenter {
 
 extension ___VARIABLE_sceneName___Presenter: ___VARIABLE_sceneName___Presenting {
     func onViewDidLoad() {
-        let viewModel = ___VARIABLE_sceneName___ViewModel()
-        ui?.display(viewModel)
     }
 }
