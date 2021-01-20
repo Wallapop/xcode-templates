@@ -1,10 +1,10 @@
-import UIKit
 import CommonUI
+import ComposableArchitecture
 
 protocol ___VARIABLE_sceneName___ViewDelegate: AnyObject {
 }
 
-final class ___VARIABLE_sceneName___View: View {
+final class ___VARIABLE_sceneName___View: View, StatefulView {
     private enum AccessibilityIdentifier: String, AccessibilityIdentificable {
         typealias container = ___VARIABLE_sceneName___View
         case placeholder
@@ -17,10 +17,19 @@ final class ___VARIABLE_sceneName___View: View {
    
     override func setupView() {
         backgroundColor = Stylesheet.color(.white)
+        addSubviews()
+    }
+    
+    private func addSubviews() {
+        [].forEach(addSubview)
     }
 
     override func setupConstraints() {
-        NSLayoutConstraint.activateNested([
-            ])
+        [].activateNestedConstraints()
+    }
+    
+    // MARK: - Apply State
+    
+    func apply(state: ___VARIABLE_sceneName___ViewModel) {
     }
 }
