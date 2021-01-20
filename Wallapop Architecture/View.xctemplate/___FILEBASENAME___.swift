@@ -5,6 +5,11 @@ protocol ___VARIABLE_sceneName___ViewDelegate: AnyObject {
 }
 
 final class ___VARIABLE_sceneName___View: View, StatefulView {
+    private enum AccessibilityIdentifier: String, AccessibilityIdentificable {
+        typealias container = ___VARIABLE_sceneName___View
+        case placeholder
+    }
+    
     private enum Constant {
     }
     
