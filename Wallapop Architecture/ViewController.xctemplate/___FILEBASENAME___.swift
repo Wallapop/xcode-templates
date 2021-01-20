@@ -12,9 +12,6 @@ final class ___VARIABLE_sceneName___ViewController: ViewController {
     
     override func loadView() {
         view = mainView
-    }
-    
-    override func setup() {
         mainView.delegate = self
     }
     

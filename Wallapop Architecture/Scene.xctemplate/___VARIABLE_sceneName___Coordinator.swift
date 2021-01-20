@@ -9,8 +9,8 @@ final class ___VARIABLE_sceneName___Coordinator: Coordinator {
     
     init(fromViewController: UIViewController, delegate: ___VARIABLE_sceneName___CoordinatorDelegate) {
         self.delegate = delegate
-        /* let presentation = ControllerTransitionStyle.Presentation(fromController: fromViewController) */
-        super.init(transition: .present(presentation))
+        let presentation = ControllerTransitionStyle.<#Transition type initialize#>
+        super.init(transition: .<#transition#>(transition))
     }
     
     override func start() {
