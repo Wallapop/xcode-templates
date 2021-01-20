@@ -7,7 +7,7 @@ protocol ___VARIABLE_sceneName___Presenting: Presenting {
 }
 
 protocol ___VARIABLE_sceneName___UI: UI, FeedbackShowable {
-    func apply(_ state: ___VARIABLE_sceneName___ViewModel)
+    func display(_ viewModel: ___VARIABLE_sceneName___ViewModel)
 }
 
 final class ___VARIABLE_sceneName___Presenter: Presenter {
@@ -22,6 +22,6 @@ final class ___VARIABLE_sceneName___Presenter: Presenter {
 extension ___VARIABLE_sceneName___Presenter: ___VARIABLE_sceneName___Presenting {
     func onViewDidLoad() {
         let viewModel = ___VARIABLE_sceneName___ViewModel()
-        ui?.apply(viewModel)
+        ui?.display(viewModel)
     }
 }

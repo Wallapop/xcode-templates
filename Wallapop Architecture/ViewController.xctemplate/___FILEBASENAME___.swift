@@ -28,7 +28,7 @@ extension ___VARIABLE_sceneName___ViewController: ___VARIABLE_sceneName___ViewDe
 }
 
 extension ___VARIABLE_sceneName___ViewController: ___VARIABLE_sceneName___UI {
-    func apply(_ state: ___VARIABLE_sceneName___ViewModel) {
-        mainView.apply(state: state)
+    func display(_ viewModel: ___VARIABLE_sceneName___ViewModel) {
+        mainView.apply(state: viewModel)
     }
 }
