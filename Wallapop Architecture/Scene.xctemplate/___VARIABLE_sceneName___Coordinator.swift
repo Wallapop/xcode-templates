@@ -9,7 +9,7 @@ final class ___VARIABLE_sceneName___Coordinator: Coordinator {
     
     init(fromViewController: UIViewController, delegate: ___VARIABLE_sceneName___CoordinatorDelegate) {
         self.delegate = delegate
-        let presentation = ControllerTransitionStyle.Presentation(fromController: fromViewController)
+        /* let presentation = ControllerTransitionStyle.Presentation(fromController: fromViewController) */
         super.init(transition: .present(presentation))
     }
     
